@@ -12,10 +12,10 @@ def display_address(dic: dict):
         return
 
     for address_dic in dic['results']:
-        message = address_dic["address1"]
-        message += address_dic["address2"]
-        message += address_dic["address3"]
-        print(message)
+        res_text = address_dic["address1"]
+        res_text += address_dic["address2"]
+        res_text += address_dic["address3"]
+        print(res_text)
 
 
 zipcode = input('郵便番号?: ')
